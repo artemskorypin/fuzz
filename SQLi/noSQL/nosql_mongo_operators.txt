@@ -1,0 +1,17 @@
+{"$ne": null}
+{"$ne": ""}
+{"$ne": true}
+{"$gt": ""}
+{"$lt": ""}
+{"$in":[1]}
+{"$nin":[1]}
+{"$exists":true}
+{"$regex": ".*"}
+{"$regex": ".*", "$options":"i"}
+[$ne]=1
+[$gt]=0
+[$exists]=true
+[$regex]=.*
+[$regex]=^.*
+[$in][]=1
+[$nin][]=1

